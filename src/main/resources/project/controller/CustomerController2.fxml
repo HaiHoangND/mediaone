@@ -25,7 +25,6 @@
       <Label layoutX="482.0" layoutY="51.0" text="Địa chỉ" AnchorPane.leftAnchor="482.0" AnchorPane.topAnchor="51.0" />
       <Label layoutX="482.0" layoutY="172.0" text="Email" AnchorPane.leftAnchor="482.0" />
       <Label layoutX="60.0" layoutY="295.0" text="Thông tin" AnchorPane.leftAnchor="60.0" />
-      <Label layoutX="482.0" layoutY="226.0" text="Mã KH" AnchorPane.leftAnchor="482.0" />
       <HBox fx:id="hBox" alignment="CENTER" layoutX="541.0" layoutY="421.0" prefHeight="52.0" prefWidth="207.0" spacing="10.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="76.80000000000001">
          <children>
             <StackPane prefHeight="52.0" prefWidth="85.0">
@@ -37,7 +36,6 @@
             <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" text="Hủy" />
          </children>
       </HBox>
-      <TextField fx:id="idText" layoutX="571.0" layoutY="222.0" AnchorPane.leftAnchor="570.4" />
       <Label layoutX="482.0" layoutY="108.0" text="Trạng thái" AnchorPane.leftAnchor="482.0" />
       <TextField fx:id="statusText" layoutX="572.0" layoutY="104.0" AnchorPane.leftAnchor="570.4" />
    </children>

@@ -49,7 +49,7 @@
       <Text fx:id="textGiamGia" layoutX="843.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giảm giá :" />
       <Text fx:id="textThanhToan" layoutX="840.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thanh toán :" />
       <Text fx:id="textvnd1" layoutX="1090.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" wrappingWidth="29.6436767578125" />
-      <Text fx:id="textvnd2" layoutX="1090.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" wrappingWidth="29.6436767578125" />
+      <Text fx:id="textvnd2" layoutX="1090.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" wrappingWidth="29.6436767578125" />
       <Text fx:id="textvn3" layoutX="1090.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" wrappingWidth="29.6436767578125" />
       <Text fx:id="textMaHoaDon1" layoutX="934.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="133.33673095703125" />
       <Text fx:id="textTongTien1" layoutX="934.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="133.33673095703125" />

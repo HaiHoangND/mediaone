@@ -16,8 +16,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class CustomerController2 implements  Initializable {
-        @FXML
-        private TextField idText;
+
+
         @FXML
         private TextField nameText;
 
@@ -46,7 +46,8 @@ public class CustomerController2 implements  Initializable {
         public Customer setCustomer() {
             Customer newCustomer = new Customer();
             try {
-                newCustomer.setId(idText.getText());
+                int id = CustomerManager.customerList.size() + 1;
+                newCustomer.setId(id + "");
                 newCustomer.setName(nameText.getText());
                 if (genderBox.getValue() == null) newCustomer.setGender("");
                 else newCustomer.setGender(genderBox.getValue());
@@ -76,7 +77,6 @@ public class CustomerController2 implements  Initializable {
             informationTextArea.setWrapText(true);
             if (CustomerController1.noscene !=1) {
                 Customer newCustomer= CustomerController1.currentCustomer;
-                idText.setText(String.valueOf(newCustomer.getId()));
                 nameText.setText(String.valueOf(newCustomer.getName()));
                 genderBox.setValue(String.valueOf(newCustomer.getGender()));
                 addressText.setText(String.valueOf(newCustomer.getAddress()));
@@ -99,27 +99,20 @@ public class CustomerController2 implements  Initializable {
 
 
         public void add() throws SQLException {
-            Customer newCustomer = setCustomer();
-            if (CustomerManager.containsID(newCustomer.getId())==true){
-                Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
-                alert.setTitle("Lỗi");
-                alert.setContentText("Không thể thêm khách hàng");
-                alert.setHeaderText("Khách hàng bị trùng ID");
-                alert.show();
-            } else {
+                Customer newCustomer = setCustomer();
                 CustomerController1.customerListController.add(newCustomer);
                 CustomerManager.add(newCustomer);
                 CustomerManagerDAO.insert(newCustomer);
                 Stage stage = (Stage) addButton.getScene().getWindow();
                 stage.close();
-            }
+
         }
 
         @FXML
         Button fixButton;
         public void fix() {
             Customer currentCustomer= CustomerController1.currentCustomer;
-            currentCustomer.setId(idText.getText());
+
             currentCustomer.setName(nameText.getText());
             if (genderBox.getValue() == null) currentCustomer.setGender("");
             else currentCustomer.setGender(genderBox.getValue());

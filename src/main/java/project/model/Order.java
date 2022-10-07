@@ -30,6 +30,17 @@ public class Order {
         int p = 0;
         for(SoldProduct x : this.getList()) {
             p +=  ( x.product.getImportPrice() ) * x.count;
+//            System.out.println(x.product.getImportPrice());
+//            System.out.println(x.count);
+        }
+//        System.out.println("---------------");
+        return p;
+    }
+
+    public int totalPrice(){
+        int p = 0;
+        for(SoldProduct x : this.getList()){
+            p += (x.product.getPrice()) * x.count;
         }
         return p;
     }

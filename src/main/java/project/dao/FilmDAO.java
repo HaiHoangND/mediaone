@@ -15,7 +15,7 @@ public class FilmDAO implements DAO<Film> {
             Connection con= JDBCUtil.getConnection();
             String sql="INSERT INTO film(id,name,price,importPrice,count,description"+
                     ",director,mainActor,movieGenre,time,premiere,language,status)"
-                    +" VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
+                    +" VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement st=con.prepareStatement(sql);
             st.setString(1,film.getId());
             st.setString(2,film.getName());

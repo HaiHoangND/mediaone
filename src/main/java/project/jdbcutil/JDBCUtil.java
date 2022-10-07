@@ -9,7 +9,7 @@ public class JDBCUtil {
     public static Connection getConnection() {
         Connection connection=null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","12092002");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","123456789");
         } catch (Exception e ) {
             System.out.println(e);
         }

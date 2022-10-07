@@ -16,6 +16,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class BillController implements Initializable {
+
     @FXML
     private TableView<Bill> billTable;
     @FXML

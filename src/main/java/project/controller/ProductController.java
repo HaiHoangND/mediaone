@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ProductController implements Initializable {
+
     static ObservableList<Product> productListController=FXCollections.observableArrayList();
 
     //TableView

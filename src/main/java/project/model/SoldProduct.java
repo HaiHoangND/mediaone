@@ -44,4 +44,15 @@ public class SoldProduct{
                 ", price=" + price +
                 '}';
     }
+    public String getIdProduct(){
+        return product.getId();
+    }
+    public String getNameProduct(){
+        return product.getName();
+    }
+
+    public int getPriceProduct(){
+        return product.getPrice();
+    }
+
 }

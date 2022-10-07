@@ -11,6 +11,7 @@ module Project3 {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires javafx.graphics;
 
 
     exports project.model;

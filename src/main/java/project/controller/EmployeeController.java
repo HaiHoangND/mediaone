@@ -26,8 +26,7 @@ public class EmployeeController implements Initializable {
 //    private DatePicker datePicker;
     @FXML
     private RadioButton manButton, womanButton;
-    @FXML
-    private TextField idText;
+
     @FXML
     private TextField salaryText;
     @FXML
@@ -67,12 +66,13 @@ public class EmployeeController implements Initializable {
     private TableColumn<Employee, Integer> salaryColumn;
     @FXML
     private TableColumn<Employee, Double> shiftColumn;
-    private String[] role = {"Nhân viên"};
+    private String[] role = {"Nhân viên", "Quản lý"};
     private String[] status = {"Đang làm việc","Nghỉ việc"};
 
     private ObservableList<Employee> employeeList;
     public void showEmployee(Employee employee){
-        idText.setText(employee.getId());
+
+
         nameText.setText(employee.getName());
         salaryText.setText(""+employee.getSalary());
         shiftText.setText(""+employee.getShift());
@@ -136,7 +136,8 @@ public class EmployeeController implements Initializable {
     public void add (ActionEvent event) throws SQLException{
         Employee newEmployee = new Employee();
         if(manButton.isSelected()) {
-            newEmployee.setId(idText.getText());
+            int id = EmployeeManager.employeeList.size() + 1;
+            newEmployee.setId(id + "");
             newEmployee.setName(nameText.getText());
             newEmployee.setPassword(passText.getText());
             newEmployee.setAddress(addressText.getText());
@@ -147,7 +148,8 @@ public class EmployeeController implements Initializable {
             newEmployee.setShift(Double.parseDouble(shiftText.getText()));
         }
         else if(womanButton.isSelected()){
-            newEmployee.setId(idText.getText());
+            int id = EmployeeManager.employeeList.size() + 1;
+            newEmployee.setId(id + "");
             newEmployee.setName(nameText.getText());
             newEmployee.setPassword(passText.getText());
             newEmployee.setAddress(addressText.getText());
@@ -162,32 +164,11 @@ public class EmployeeController implements Initializable {
         EmployeeManager.add(newEmployee);
     }
 
-//    public void delete(ActionEvent e){
-//        Employee selected = table.getSelectionModel().getSelectedItem();
-//        employeeList.remove(selected);
-//        EmployeeManagerDAO.delete(selected);
-//        EmployeeManager.delete(selected);
-//
-//    }
 
-    //    void getSelected (MouseEvent event){
-//        int index = table.getSelectionModel().getSelectedIndex();
-//        if(index <= 1){
-//            return;
-//        }
-//        idText.setText(idColumn.getCellData(index).toString());
-//        nameText.setText(nameColumn.getCellData(index).toString());
-//        passText.setText(passColumn.getCellData(index).toString());
-//        statusChoiceBox.setValue(statusColumn.getCellData(index).toString());
-//        roleChoiceBox.setValue(roleColumn.getCellData(index).toString());
-//        addressText.setText(addressColumn.getCellData(index).toString());
-////        g.setText(idColumn.getCellData(index).toString());
-//
-//    }
     public void edit(ActionEvent event) throws SQLException{
         Employee selected = table.getSelectionModel().getSelectedItem();;
         if(manButton.isSelected()) {
-            selected.setId(idText.getText());
+
             selected.setName(nameText.getText());
             selected.setPassword(passText.getText());
             selected.setAddress(addressText.getText());
@@ -198,7 +179,7 @@ public class EmployeeController implements Initializable {
             selected.setShift(Double.parseDouble(shiftText.getText()));
         }
         else if(womanButton.isSelected()){
-            selected.setId(idText.getText());
+
             selected.setName(nameText.getText());
             selected.setPassword(passText.getText());
             selected.setAddress(addressText.getText());

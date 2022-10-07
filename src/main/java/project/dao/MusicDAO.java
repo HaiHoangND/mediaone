@@ -18,7 +18,7 @@ public class MusicDAO implements DAO<Music> {
             Connection con= JDBCUtil.getConnection();
             String sql="INSERT INTO music(id,name,price,importPrice,count,description"+
                     ",singers,producer,musicGenre,time,status) "
-                    +" VALUES(?,?,?,?,?,?,?,?,?,?)";
+                    +" VALUES(?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement st=con.prepareStatement(sql);
             st.setString(1,music.getId());
             st.setString(2,music.getName());

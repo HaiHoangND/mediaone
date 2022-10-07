@@ -7,22 +7,22 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import project.Manager.*;
 import project.dao.*;
+import project.model.Employee;
 
 public class Main extends Application {
+    public static Employee employee= null;
     public static void main(String[] args) {
         ProductManager.productList=ProductManagerDAO.importAll();
         EmployeeManager.employeeList=EmployeeManagerDAO.importAll();
         CustomerManager.customerList= CustomerManagerDAO.importALl();
         BillManager.billList= BillManagerDAO.importAll();
-
-
         System.out.println();
         launch(args);
     };
     @Override
     public void start(Stage primaryStage) {
         try{
-            Parent root = FXMLLoader.load(this.getClass().getResource("CustomerController2.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource("Login.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("One Media");
@@ -31,4 +31,5 @@ public class Main extends Application {
             System.out.println(e.getMessage());
         }
     }
+//    public void close()
 }

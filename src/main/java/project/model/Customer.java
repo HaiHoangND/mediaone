@@ -11,8 +11,6 @@ public class Customer {
         private String information;
         private int totalAmountPaid;
 
-
-        public int discount;
         public final double M1=10000000;
         public final double M2=20000000;
         public final double M3=50000000;
@@ -101,8 +99,11 @@ public class Customer {
 
         public void setTotalAmountPaid(int totalAmountPaid) {
             this.totalAmountPaid = totalAmountPaid;
+            if (totalAmountPaid<M1) status="Đồng";
+            if (totalAmountPaid>=M1 && totalAmountPaid<M2) status="Bạc";
+            if (totalAmountPaid>=M2 && totalAmountPaid <M3) status="Vàng";
+            if (totalAmountPaid>=M3) status="Kim Cương";
         }
-
     @Override
     public String toString() {
         return "KhachHang{" +
@@ -115,11 +116,11 @@ public class Customer {
                 ", email='" + email + '\'' +
                 ", information='" + information + '\'' +
                 ", totalAmountPaid=" + totalAmountPaid +
-                ", discount=" + discount +
                 '}';
     }
 
     public int getDiscount() {
+            int discount = 0;
             if (totalAmountPaid<M1) discount=1;
             if (totalAmountPaid>=M1 && totalAmountPaid<M2) discount=2;
             if (totalAmountPaid>=M2 && totalAmountPaid <M3) discount=5;

@@ -6,10 +6,7 @@ import project.Manager.ProductManager;
 import project.jdbcutil.JDBCUtil;
 import project.model.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class BillManagerDAO {
@@ -34,29 +31,43 @@ public class BillManagerDAO {
     }
     public static Order getOrder(String productList,String countList,String priceList){
         Order order= new Order();
-        int beginIndexProduct=0,endIndexCount=0;
-        int beginIndexCount=0,endIndexProduct=0;
-        int beginIndexPrice=0,endIndexPrice=0;
-        while (1==1){
-            int p=productList.indexOf(',',beginIndexProduct);
-            int c=countList.indexOf(',',beginIndexCount);
-            int r=countList.indexOf(',',beginIndexPrice);
-            if (p==-1) break;
-            endIndexProduct=p;
-            endIndexCount=c;
-            endIndexPrice=r;
-            String s1=productList.substring(beginIndexProduct,endIndexCount);
-            Product product= ProductManager.get(s1);
-            String s2=countList.substring(beginIndexCount,endIndexCount);
-            int count=Integer.parseInt(s2);
-            String s3=countList.substring(beginIndexPrice,endIndexPrice);
-            int price=Integer.parseInt(s3);
-            order.add(product,count,price);
-            beginIndexProduct=endIndexProduct+1;
-            beginIndexCount=endIndexCount+1;
-            beginIndexPrice=endIndexPrice+1;
+        order.setList(new ArrayList<>());
+        ArrayList<String> pList = new ArrayList<>();
+        ArrayList<Integer> cList = new ArrayList<>();
+        ArrayList<Integer> prList = new ArrayList<>();
+
+        for(int x : processString(productList)){
+            pList.add(x + "");
         }
+        for(int x : processString(countList)){
+            cList.add(x);
+        }
+        for(int x : processString(priceList)){
+            prList.add(x);
+        }
+        for(int x = 0; x < pList.size(); x++){
+            order.getList().add(new SoldProduct(ProductManager.get(pList.get(x)), cList.get(x), prList.get(x)));
+            //System.out.println(pList.get(x) + " , " + cList.get(x) +" , " + prList.get(x));
+        }
+
         return order;
+    }
+
+    public static ArrayList<Integer> processString(String s){
+        ArrayList<Integer> res = new ArrayList<>() ;
+        int index = 0;
+        int tmp = 0;
+        for(index = 0; index < s.length() ; index ++){
+            while(s.charAt(index) != ','){
+                tmp = tmp*10 + (s.charAt(index) - '0');
+                index ++;
+            }
+            res.add(tmp);
+            if(s.charAt(index) == ','){
+                tmp = 0;
+            }
+        }
+        return res;
     }
     public static int insert(Bill bill) {
         int ans=0;
@@ -74,8 +85,8 @@ public class BillManagerDAO {
             st.setString(7,priceToString(bill.getOrder()));
             st.setInt(8,bill.getTotalPayout());
             ans=st.executeUpdate();
-            System.out.println("Bạn đã thực thi: "+sql);
-            System.out.println("Có "+ans+" dòng bị thay đổi");
+//            System.out.println("Bạn đã thực thi: "+sql);
+//            System.out.println("Có "+ans+" dòng bị thay đổi");
             JDBCUtil.closeConnection(con);
         } catch (SQLException ex){
             ex.printStackTrace();
@@ -110,5 +121,6 @@ public class BillManagerDAO {
         }
         return ans;
     }
+
 
 }

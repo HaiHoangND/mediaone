@@ -18,6 +18,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ProductController2 implements Initializable {
+
     @FXML VBox vBox;
     @FXML
     AnchorPane anchorPane;

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.CustomerController1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1049.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller.CustomerController1">
    <children>
       <TableView fx:id="tableCustomer" layoutX="28.0" layoutY="89.0" prefHeight="259.0" prefWidth="418.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="89.0">
         <columns>
@@ -33,7 +33,6 @@
             <Button mnemonicParsing="false" onAction="#change" prefHeight="26.0" prefWidth="70.0" text="Sửa" />
             <Button mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="69.0" text="Thêm" />
             <Button mnemonicParsing="false" onAction="#infor" prefHeight="26.0" prefWidth="70.0" text="Thông tin" />
-            <Button mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="70.0" text="Xóa" />
          </children>
       </VBox>
       <TextField fx:id="searchText" layoutX="94.0" layoutY="30.0" prefHeight="26.0" prefWidth="347.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="30.0" />

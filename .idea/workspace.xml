@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b88b349-f6b8-4dc1-9e06-404bc28b6ffa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controller/AddCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controller/ChooseCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/project/controller/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/project/controller/addCustomer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/project/controller/chooseCustomer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/BillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/CreateBillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/CreateBillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/CustomerController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/CustomerController1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/CustomerController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/CustomerController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/ProductController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/ProductController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/SellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/SellController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controller/StatisticController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controller/TaoHoaDon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/BillManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/BillManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/FilmDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/FilmDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/MusicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/MusicDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/tesst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/jdbcutil/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/jdbcutil/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Promotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/SoldProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/SoldProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/BillController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/BillController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/CreateBill.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/CreateBill.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/CustomerController1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/CustomerController1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/CustomerController2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/CustomerController2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/EmployeeController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/EmployeeController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/MainController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/MainController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/ProductController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/ProductController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/PromotionController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/Sell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/Sell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project/controller/Statistic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project/controller/Statistic.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2C8kVY7Gtmqg47RXoEjABDTCXC9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/mysql/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.controller.Main" />
+      <module name="MediaOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.controller.testMain" />
+      <module name="Project3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.testMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b88b349-f6b8-4dc1-9e06-404bc28b6ffa" name="Changes" comment="" />
+      <created>1658191627201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658191627201</updated>
+    </task>
+    <servers />
+  </component>
+</project>
